@@ -1,9 +1,14 @@
-const express = require("express");
-const clientesRoutes = require("./routes/clientesRoutes.js");
+import express from "express";
+import segmentacionRoutes from "./routes/clientesRoutes.js";
 
 const app = express();
-
 app.use(express.json());
-app.use("/api/clientes", clientesRoutes);
 
-module.exports = app;
+// Montamos bajo /api/clientes
+app.use("/api/clientes", segmentacionRoutes);
+
+app.get("/", (req, res) => {
+  res.json({ mensaje: "API de Segmentación funcionando 🚀" });
+});
+
+export default app;
