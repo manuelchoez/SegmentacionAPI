@@ -1,5 +1,5 @@
 import express from "express";
-import segmentacionRoutes from "./routes/clientesRoutes.js";
+import segmentacionRoutes from "./src/routes/clientesRoutes.js";
 
 const app = express();
 app.use(express.json());
