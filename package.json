@@ -2,10 +2,10 @@
   "name": "segmentacionapi",
   "version": "1.0.0",
   "description": "API de segmentación bancaria para simulación de clientes",
-  "main": "server.js",
+  "main": "src/server.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
+    "start": "node src/server.js",
     "build": "echo 'Nothing to build'"
   },
   "engines": {
