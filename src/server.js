@@ -1,3 +1,4 @@
+// Ajuste de ruta: server.js está dentro de /src, app.js en la raíz
 import app from "../app.js";
 
 const PORT = process.env.PORT || 3000;
